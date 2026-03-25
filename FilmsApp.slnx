@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Biznis/Biznis.csproj" />
+  <Project Path="DAL/DAL.csproj" />
+  <Project Path="DTO/DTO.csproj" />
+  <Project Path="FilmsApp/FilmsApp.csproj" />
+</Solution>
