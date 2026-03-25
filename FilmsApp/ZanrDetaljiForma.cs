@@ -20,7 +20,7 @@ namespace FilmsApp
         {
             InitializeComponent();
             tbID.Visible = false;
-            tbNaziv.Visible = false;
+            lbId.Visible = false;
         }
 
         public ZanrDetaljiForma(ZanrDTO zanr)
@@ -34,7 +34,31 @@ namespace FilmsApp
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ZanrDTO zanr = new ZanrDTO();
+                zanr.NazivZanra = tbNaziv.Text;
 
+                if (trenutniZanr == null)
+                {
+                    zanrBiznis.Insert(zanr);
+                    MessageBox.Show("Žanr je uspešno dodat!",
+                        "Uspeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    zanr.idZanr = trenutniZanr.idZanr;
+                    zanrBiznis.Update(zanr);
+                    MessageBox.Show("Žanr je uspešno izmenjen!",
+                        "Uspeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

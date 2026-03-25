@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FilmDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusDTO.cs" />
     <Compile Include="ZanrDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
