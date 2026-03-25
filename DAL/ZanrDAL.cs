@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    internal class ZanrDAL
+    public class ZanrDAL
     {
         public List<ZanrDTO> GetAll()
         {
