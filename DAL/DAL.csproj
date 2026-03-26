@@ -45,6 +45,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Konekcija.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusDAL.cs" />
     <Compile Include="ZanrDAL.cs" />
   </ItemGroup>
   <ItemGroup>

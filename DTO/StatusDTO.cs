@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class StatusDTO
+    public class StatusDTO
     {
         public int IdStatus { get; set; }
         public string NazivStatusa { get; set; }
