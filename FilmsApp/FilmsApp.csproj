@@ -59,6 +59,12 @@
     <Compile Include="FilmForma.Designer.cs">
       <DependentUpon>FilmForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecenzijaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecenzijaForma.Designer.cs">
+      <DependentUpon>RecenzijaForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZanrDetaljiForma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RecenzijaForma.resx">
+      <DependentUpon>RecenzijaForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ZanrDetaljiForma.resx">
       <DependentUpon>ZanrDetaljiForma.cs</DependentUpon>
     </EmbeddedResource>
