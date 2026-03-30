@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmDetaljiForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmDetaljiForma.Designer.cs">
+      <DependentUpon>FilmDetaljiForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="FilmForma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="ZanrForma.Designer.cs">
       <DependentUpon>ZanrForma.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FilmDetaljiForma.resx">
+      <DependentUpon>FilmDetaljiForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FilmForma.resx">
       <DependentUpon>FilmForma.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +111,10 @@
     <ProjectReference Include="..\Biznis\Biznis.csproj">
       <Project>{3642e7d6-b6eb-4048-ab6f-ff5b35047e94}</Project>
       <Name>Biznis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{dd6b195f-292a-4515-a03c-01177657ad90}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{2e333f50-aca7-4a42-9a51-e505258f926a}</Project>

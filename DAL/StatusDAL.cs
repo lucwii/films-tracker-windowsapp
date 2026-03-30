@@ -8,7 +8,7 @@ using DTO;
 
 namespace DAL
 {
-    internal class StatusDAL
+    public class StatusDAL
     {
         public List<StatusDTO> GetAll()
         {

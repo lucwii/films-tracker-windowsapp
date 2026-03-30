@@ -49,7 +49,7 @@ namespace FilmsApp
 
         private void btnIzmeni_Click(object sender, EventArgs e)
         {
-            if(dgvFilmovi.SelectedRows.Count == 0)
+            if (dgvFilmovi.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Molimo izaberite film za izmenu!", "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -57,6 +57,7 @@ namespace FilmsApp
 
             FilmDTO selektovani = (FilmDTO)dgvFilmovi.SelectedRows[0].DataBoundItem;
             FilmDetaljiForma forma = new FilmDetaljiForma(trenutniZanr, selektovani);
+            forma.ShowDialog();
             UcitajPodatke();
         }
 
@@ -72,7 +73,7 @@ namespace FilmsApp
 
             DialogResult potvrda = MessageBox.Show("Da li ste sigurni da zelite da obrisete " + selektovani.Naziv + "?", "Potvrda brisanja", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(potvrda == DialogResult.Yes)
+            if (potvrda == DialogResult.Yes)
             {
                 try
                 {
@@ -81,7 +82,7 @@ namespace FilmsApp
                         "Uspeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UcitajPodatke();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message,
                         "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);

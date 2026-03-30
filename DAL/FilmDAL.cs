@@ -110,6 +110,8 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand("DELETE FROM Film WHERE IdFilm = @IdFilm", conn);
                 cmd.Parameters.AddWithValue("@IdFilm", idFilm);
 
+                conn.Open();
+
                 SqlTransaction transakcija = conn.BeginTransaction();
                 cmd.Transaction = transakcija;
 
