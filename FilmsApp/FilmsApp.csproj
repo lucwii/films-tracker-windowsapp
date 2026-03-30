@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmForma.Designer.cs">
+      <DependentUpon>FilmForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZanrDetaljiForma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="ZanrForma.Designer.cs">
       <DependentUpon>ZanrForma.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FilmForma.resx">
+      <DependentUpon>FilmForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
