@@ -93,5 +93,19 @@ namespace FilmsApp
                 }
             }
         }
+
+        private void btnFilmovi_Click(object sender, EventArgs e)
+        {
+            if (dgvZanrovi.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Molimo izaberite žanr!",
+                    "Upozorenje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            ZanrDTO selektovani = (ZanrDTO)dgvZanrovi.SelectedRows[0].DataBoundItem;
+            FilmForma forma = new FilmForma(selektovani);
+            forma.ShowDialog();
+        }
     }
 }
