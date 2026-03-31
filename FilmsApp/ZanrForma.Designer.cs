@@ -41,12 +41,12 @@
             // dgvZanrovi
             // 
             this.dgvZanrovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvZanrovi.Location = new System.Drawing.Point(32, 129);
+            this.dgvZanrovi.Location = new System.Drawing.Point(41, 129);
             this.dgvZanrovi.MultiSelect = false;
             this.dgvZanrovi.Name = "dgvZanrovi";
             this.dgvZanrovi.ReadOnly = true;
             this.dgvZanrovi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvZanrovi.Size = new System.Drawing.Size(279, 186);
+            this.dgvZanrovi.Size = new System.Drawing.Size(255, 186);
             this.dgvZanrovi.TabIndex = 0;
             // 
             // btnIzmeni
@@ -72,10 +72,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 86);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 20);
+            this.label1.Size = new System.Drawing.Size(181, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lista svih zanrova filmova:";
             // 

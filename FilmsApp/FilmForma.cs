@@ -33,6 +33,15 @@ namespace FilmsApp
             try
             {
                 dgvFilmovi.DataSource = filmBiznis.GetAll(trenutniZanr.idZanr);
+                dgvFilmovi.Columns["IdFilm"].Visible = false;
+                dgvFilmovi.Columns["IdZanr"].Visible = false;
+                dgvFilmovi.Columns["IdStatus"].Visible = false;
+
+                dgvFilmovi.Columns["Naziv"].HeaderText = "Naziv filma";
+                dgvFilmovi.Columns["DatumGledanja"].HeaderText = "Datum gledanja";
+                dgvFilmovi.Columns["NazivStatusa"].HeaderText = "Status";
+
+                dgvFilmovi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
             catch(Exception ex)
             {
