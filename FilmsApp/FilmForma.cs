@@ -21,6 +21,7 @@ namespace FilmsApp
             InitializeComponent();
             trenutniZanr = zanr;
             lbNaslov.Text = "Filmovi zanra: " + zanr.NazivZanra;
+            this.Text = "Filmovi";
         }
 
         private void FilmForma_Load(object sender, EventArgs e)
@@ -42,6 +43,12 @@ namespace FilmsApp
                 dgvFilmovi.Columns["NazivStatusa"].HeaderText = "Status";
 
                 dgvFilmovi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                dgvFilmovi.EnableHeadersVisualStyles = false;
+                dgvFilmovi.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+                dgvFilmovi.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgvFilmovi.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
+                dgvFilmovi.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
             }
             catch(Exception ex)
             {

@@ -25,6 +25,8 @@ namespace FilmsApp
             trenutniZanr = zanr;
             tbId.Visible = false;
             lbId.Visible = false;
+
+            this.Text = "Upravljanje filmom";
         }
 
         public FilmDetaljiForma(ZanrDTO zanr, FilmDTO film)
@@ -36,6 +38,8 @@ namespace FilmsApp
             tbId.Text = film.IdFilm.ToString();
             tbNaziv.Text = film.Naziv;
             dtpDatum.Value = film.DatumGledanja;
+
+            this.Text = "Upravljanje filmom";
         }
 
         private void FilmDetaljiForma_Load(object sender, EventArgs e)
