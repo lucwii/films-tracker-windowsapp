@@ -30,6 +30,10 @@ namespace FilmsApp
             try
             {
                 dgvZanrovi.DataSource = zanrBiznis.GetAll();
+                dgvZanrovi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                dgvZanrovi.Columns["idZanr"].HeaderText = "ID";
+                dgvZanrovi.Columns["NazivZanra"].HeaderText = "Naziv";
             }
             catch (Exception ex)
             {

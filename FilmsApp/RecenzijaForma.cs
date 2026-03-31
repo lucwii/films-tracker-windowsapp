@@ -33,6 +33,8 @@ namespace FilmsApp
             try
             {
                 dgvRecenzije.DataSource = recenzijaBiznis.GetAll(trenutniFilm.IdFilm);
+
+                dgvRecenzije.Columns["TekstRecenzije"].HeaderText = "Tekst recenzije";
             }
             catch(Exception ex)
             {
