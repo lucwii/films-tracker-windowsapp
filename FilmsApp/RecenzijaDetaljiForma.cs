@@ -23,6 +23,8 @@ namespace FilmsApp
             trenutniFilm = film;
             tbId.Visible = false;
             lbId.Visible = false;
+
+            this.Text = "Upravljanje recenzijom";
         }
 
         public RecenzijaDetaljiForma(FilmDTO film, RecenzijaDTO recenzija)
@@ -35,6 +37,8 @@ namespace FilmsApp
             tbTekst.Text = recenzija.TekstRecenzije;
             numOcena.Value = recenzija.Ocena;
             dtpDatum.Value = recenzija.DatumRecenzije;
+
+            this.Text = "Upravljanje recenzijom";
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)

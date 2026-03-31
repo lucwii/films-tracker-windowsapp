@@ -21,6 +21,8 @@ namespace FilmsApp
             InitializeComponent();
             trenutniFilm = film;
             lbNaslov.Text = "Recenzije filma: " + trenutniFilm.Naziv;
+
+            this.Text = "Recenzije filma: " + trenutniFilm.Naziv;
         }
 
         private void RecenzijaForma_Load(object sender, EventArgs e)
@@ -44,6 +46,12 @@ namespace FilmsApp
                 dgvRecenzije.Columns["TekstRecenzije"].FillWeight = 300;
                 dgvRecenzije.Columns["Ocena"].FillWeight = 50;
                 dgvRecenzije.Columns["DatumRecenzije"].FillWeight = 100;
+
+                dgvRecenzije.EnableHeadersVisualStyles = false;
+                dgvRecenzije.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+                dgvRecenzije.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgvRecenzije.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
+                dgvRecenzije.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
             }
             catch(Exception ex)
             {

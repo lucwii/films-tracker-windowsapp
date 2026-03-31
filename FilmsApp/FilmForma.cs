@@ -21,7 +21,7 @@ namespace FilmsApp
             InitializeComponent();
             trenutniZanr = zanr;
             lbNaslov.Text = "Filmovi zanra: " + zanr.NazivZanra;
-            this.Text = "Filmovi";
+            this.Text = "Filmovi zanra: " + zanr.NazivZanra;
         }
 
         private void FilmForma_Load(object sender, EventArgs e)
