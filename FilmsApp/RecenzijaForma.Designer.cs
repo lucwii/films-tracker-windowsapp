@@ -54,14 +54,14 @@
             this.dgvRecenzije.Name = "dgvRecenzije";
             this.dgvRecenzije.ReadOnly = true;
             this.dgvRecenzije.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRecenzije.Size = new System.Drawing.Size(402, 260);
+            this.dgvRecenzije.Size = new System.Drawing.Size(438, 260);
             this.dgvRecenzije.TabIndex = 1;
             // 
             // btnNovi
             // 
             this.btnNovi.Location = new System.Drawing.Point(40, 360);
             this.btnNovi.Name = "btnNovi";
-            this.btnNovi.Size = new System.Drawing.Size(75, 33);
+            this.btnNovi.Size = new System.Drawing.Size(111, 33);
             this.btnNovi.TabIndex = 2;
             this.btnNovi.Text = "Novi";
             this.btnNovi.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             // 
             this.btnIzmeni.Location = new System.Drawing.Point(204, 360);
             this.btnIzmeni.Name = "btnIzmeni";
-            this.btnIzmeni.Size = new System.Drawing.Size(75, 33);
+            this.btnIzmeni.Size = new System.Drawing.Size(111, 33);
             this.btnIzmeni.TabIndex = 3;
             this.btnIzmeni.Text = "Izmeni";
             this.btnIzmeni.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // 
             this.btnObrisi.Location = new System.Drawing.Point(367, 360);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(75, 33);
+            this.btnObrisi.Size = new System.Drawing.Size(111, 33);
             this.btnObrisi.TabIndex = 4;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 417);
+            this.ClientSize = new System.Drawing.Size(518, 434);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnIzmeni);
             this.Controls.Add(this.btnNovi);

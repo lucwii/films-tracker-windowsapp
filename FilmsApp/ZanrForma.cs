@@ -18,6 +18,7 @@ namespace FilmsApp
         public ZanrForma()
         {
             InitializeComponent();
+            this.Text = "Zanrovi fimova";
         }
 
         private void ZanrForma_Load(object sender, EventArgs e)
@@ -32,8 +33,15 @@ namespace FilmsApp
                 dgvZanrovi.DataSource = zanrBiznis.GetAll();
                 dgvZanrovi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                dgvZanrovi.Columns["idZanr"].HeaderText = "ID";
+                dgvZanrovi.Columns["idZanr"].Visible = false;
                 dgvZanrovi.Columns["NazivZanra"].HeaderText = "Naziv";
+
+                dgvZanrovi.EnableHeadersVisualStyles = false;
+                dgvZanrovi.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+                dgvZanrovi.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgvZanrovi.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
+
+                dgvZanrovi.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
             }
             catch (Exception ex)
             {

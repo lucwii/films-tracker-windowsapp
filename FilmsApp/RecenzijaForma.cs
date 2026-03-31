@@ -33,8 +33,17 @@ namespace FilmsApp
             try
             {
                 dgvRecenzije.DataSource = recenzijaBiznis.GetAll(trenutniFilm.IdFilm);
+                dgvRecenzije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                dgvRecenzije.Columns["IdRecenzije"].Visible = false;
+                dgvRecenzije.Columns["IdFilm"].Visible = false;
 
                 dgvRecenzije.Columns["TekstRecenzije"].HeaderText = "Tekst recenzije";
+                dgvRecenzije.Columns["DatumRecenzije"].HeaderText = "Datum recenzije";
+
+                dgvRecenzije.Columns["TekstRecenzije"].FillWeight = 300;
+                dgvRecenzije.Columns["Ocena"].FillWeight = 50;
+                dgvRecenzije.Columns["DatumRecenzije"].FillWeight = 100;
             }
             catch(Exception ex)
             {

@@ -21,6 +21,7 @@ namespace FilmsApp
             InitializeComponent();
             tbID.Visible = false;
             lbId.Visible = false;
+            this.Text = "Upravljanje zanrom";
         }
 
         public ZanrDetaljiForma(ZanrDTO zanr)
@@ -30,6 +31,7 @@ namespace FilmsApp
 
             tbID.Text = zanr.idZanr.ToString();
             tbNaziv.Text = zanr.NazivZanra;
+            this.Text = "Upravljanje zanrom";
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
