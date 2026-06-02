@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FilmoviDB">
+  <DataContextMoniker Name="/FilmoviDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2f245d8e-187a-47fa-ab51-42b5ac715e75" absoluteBounds="0.75, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/FilmoviDBDataContext/Film" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a53ff08-56f4-4395-93c3-bd80d3d5f819" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4963e77-365a-4f36-88d2-8fc156bcfaaf" absoluteBounds="3.75, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/FilmoviDBDataContext/Recenzija" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b08e5a7d-b0f1-4e57-aad4-8bb13a44c38a" absoluteBounds="3.765, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.38544840494792); (3.75 : 2.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FilmoviDBDataContext/Film/Film_Recenzija" />
+      <nodes>
+        <classShapeMoniker Id="2f245d8e-187a-47fa-ab51-42b5ac715e75" />
+        <classShapeMoniker Id="a4963e77-365a-4f36-88d2-8fc156bcfaaf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bc2f750c-a19a-4200-8392-a6bece492e43" absoluteBounds="1.375, 3.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FilmoviDBDataContext/Status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7d0f319-bd87-4c7f-94ab-a329c9003747" absoluteBounds="1.3900000000000001, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.0625 : 3.5); (2.0625 : 2.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FilmoviDBDataContext/Status/Status_Film" />
+      <nodes>
+        <classShapeMoniker Id="bc2f750c-a19a-4200-8392-a6bece492e43" />
+        <classShapeMoniker Id="2f245d8e-187a-47fa-ab51-42b5ac715e75" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b0f298f6-977c-4ff3-9e0f-46632eb04cf7" absoluteBounds="4.125, 3.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FilmoviDBDataContext/Zanr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af500bd6-4665-4c6c-ad03-e5f45d391ef9" absoluteBounds="4.14, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.96875 : 3.875); (5.96875 : 1.46875); (2.75 : 1.46875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FilmoviDBDataContext/Zanr/Zanr_Film" />
+      <nodes>
+        <classShapeMoniker Id="b0f298f6-977c-4ff3-9e0f-46632eb04cf7" />
+        <classShapeMoniker Id="2f245d8e-187a-47fa-ab51-42b5ac715e75" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
