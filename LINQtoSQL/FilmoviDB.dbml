@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FilmoviDB" Class="FilmoviDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-RAAFFPD;Initial Catalog=FilmoviDB;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="LINQtoSQL.Properties.Settings" SettingsPropertyName="FilmoviDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Film" Member="Films">
+    <Type Name="Film">
+      <Column Name="IdFilm" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Naziv" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DatumGledanja" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdZanr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Film_Recenzija" Member="Recenzijas" ThisKey="IdFilm" OtherKey="IdFilm" Type="Recenzija" />
+      <Association Name="Status_Film" Member="Status" ThisKey="IdStatus" OtherKey="IdStatus" Type="Status" IsForeignKey="true" />
+      <Association Name="Zanr_Film" Member="Zanr" ThisKey="IdZanr" OtherKey="IdZanr" Type="Zanr" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Recenzija" Member="Recenzijas">
+    <Type Name="Recenzija">
+      <Column Name="IdRecenzije" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TekstRecenzije" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Ocena" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DatumRecenzije" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdFilm" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Film_Recenzija" Member="Film" ThisKey="IdFilm" OtherKey="IdFilm" Type="Film" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Status" Member="Status">
+    <Type Name="Status">
+      <Column Name="IdStatus" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NazivStatusa" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Status_Film" Member="Films" ThisKey="IdStatus" OtherKey="IdStatus" Type="Film" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zanr" Member="Zanrs">
+    <Type Name="Zanr">
+      <Column Name="IdZanr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NazivZanra" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Zanr_Film" Member="Films" ThisKey="IdZanr" OtherKey="IdZanr" Type="Film" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_DodajFilm" Method="sp_DodajFilm">
+    <Parameter Name="Naziv" Parameter="naziv" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DatumGledanja" Parameter="datumGledanja" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdZanr" Parameter="idZanr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdStatus" Parameter="idStatus" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DodajZanr" Method="sp_DodajZanr">
+    <Parameter Name="NazivZanra" Parameter="nazivZanra" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
