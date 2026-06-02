@@ -138,6 +138,10 @@
       <Project>{2e333f50-aca7-4a42-9a51-e505258f926a}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LINQtoSQL\LINQtoSQL.csproj">
+      <Project>{32032a2f-8b48-4630-b0cc-85647cc1072a}</Project>
+      <Name>LINQtoSQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

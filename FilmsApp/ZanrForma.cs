@@ -119,5 +119,12 @@ namespace FilmsApp
             FilmForma forma = new FilmForma(selektovani);
             forma.ShowDialog();
         }
+
+        private void btnLINQ_Click(object sender, EventArgs e)
+        {
+            LINQtoSQL.LINQMasterDetailsForma forma =
+                new LINQtoSQL.LINQMasterDetailsForma();
+            forma.ShowDialog();
+        }
     }
 }
