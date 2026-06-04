@@ -36,16 +36,17 @@
             // lblNaslov
             // 
             this.lblNaslov.AutoSize = true;
-            this.lblNaslov.Location = new System.Drawing.Point(321, 62);
+            this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaslov.Location = new System.Drawing.Point(255, 54);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(140, 16);
+            this.lblNaslov.Size = new System.Drawing.Size(230, 25);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "Zanrovi i njihovi filmovi";
             // 
             // dgvUpit
             // 
             this.dgvUpit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUpit.Location = new System.Drawing.Point(129, 109);
+            this.dgvUpit.Location = new System.Drawing.Point(96, 106);
             this.dgvUpit.Name = "dgvUpit";
             this.dgvUpit.RowHeadersWidth = 51;
             this.dgvUpit.RowTemplate.Height = 24;
@@ -56,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(727, 433);
             this.Controls.Add(this.dgvUpit);
             this.Controls.Add(this.lblNaslov);
             this.Name = "LINQUpitForma";

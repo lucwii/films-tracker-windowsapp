@@ -43,18 +43,20 @@
             // lblZanrovi
             // 
             this.lblZanrovi.AutoSize = true;
+            this.lblZanrovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZanrovi.Location = new System.Drawing.Point(56, 48);
             this.lblZanrovi.Name = "lblZanrovi";
-            this.lblZanrovi.Size = new System.Drawing.Size(55, 16);
+            this.lblZanrovi.Size = new System.Drawing.Size(98, 29);
             this.lblZanrovi.TabIndex = 0;
             this.lblZanrovi.Text = "Zanrovi:";
             // 
             // lblFilmovi
             // 
             this.lblFilmovi.AutoSize = true;
+            this.lblFilmovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFilmovi.Location = new System.Drawing.Point(56, 310);
             this.lblFilmovi.Name = "lblFilmovi";
-            this.lblFilmovi.Size = new System.Drawing.Size(53, 16);
+            this.lblFilmovi.Size = new System.Drawing.Size(97, 29);
             this.lblFilmovi.TabIndex = 1;
             this.lblFilmovi.Text = "Filmovi:";
             // 
@@ -68,7 +70,7 @@
             this.dgvZanrovi.RowHeadersWidth = 51;
             this.dgvZanrovi.RowTemplate.Height = 24;
             this.dgvZanrovi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvZanrovi.Size = new System.Drawing.Size(307, 170);
+            this.dgvZanrovi.Size = new System.Drawing.Size(457, 170);
             this.dgvZanrovi.TabIndex = 2;
             this.dgvZanrovi.SelectionChanged += new System.EventHandler(this.dgvZanrovi_SelectionChanged);
             // 
@@ -82,14 +84,14 @@
             this.dgvFilmovi.RowHeadersWidth = 51;
             this.dgvFilmovi.RowTemplate.Height = 24;
             this.dgvFilmovi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFilmovi.Size = new System.Drawing.Size(307, 170);
+            this.dgvFilmovi.Size = new System.Drawing.Size(457, 170);
             this.dgvFilmovi.TabIndex = 3;
             // 
             // btnNovi
             // 
-            this.btnNovi.Location = new System.Drawing.Point(35, 570);
+            this.btnNovi.Location = new System.Drawing.Point(52, 570);
             this.btnNovi.Name = "btnNovi";
-            this.btnNovi.Size = new System.Drawing.Size(134, 51);
+            this.btnNovi.Size = new System.Drawing.Size(101, 51);
             this.btnNovi.TabIndex = 4;
             this.btnNovi.Text = "Novi";
             this.btnNovi.UseVisualStyleBackColor = true;
@@ -97,9 +99,9 @@
             // 
             // btnIzmeni
             // 
-            this.btnIzmeni.Location = new System.Drawing.Point(211, 570);
+            this.btnIzmeni.Location = new System.Drawing.Point(172, 570);
             this.btnIzmeni.Name = "btnIzmeni";
-            this.btnIzmeni.Size = new System.Drawing.Size(134, 51);
+            this.btnIzmeni.Size = new System.Drawing.Size(102, 51);
             this.btnIzmeni.TabIndex = 5;
             this.btnIzmeni.Text = "Izmeni";
             this.btnIzmeni.UseVisualStyleBackColor = true;
@@ -107,9 +109,9 @@
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(378, 570);
+            this.btnObrisi.Location = new System.Drawing.Point(290, 570);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(134, 51);
+            this.btnObrisi.Size = new System.Drawing.Size(96, 51);
             this.btnObrisi.TabIndex = 6;
             this.btnObrisi.Text = "Obrisi";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -117,9 +119,9 @@
             // 
             // btnLINQUpit
             // 
-            this.btnLINQUpit.Location = new System.Drawing.Point(417, 445);
+            this.btnLINQUpit.Location = new System.Drawing.Point(403, 570);
             this.btnLINQUpit.Name = "btnLINQUpit";
-            this.btnLINQUpit.Size = new System.Drawing.Size(134, 51);
+            this.btnLINQUpit.Size = new System.Drawing.Size(113, 51);
             this.btnLINQUpit.TabIndex = 7;
             this.btnLINQUpit.Text = "LINQ Upit";
             this.btnLINQUpit.UseVisualStyleBackColor = true;
