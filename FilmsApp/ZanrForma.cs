@@ -126,5 +126,12 @@ namespace FilmsApp
                 new LINQtoSQL.LINQMasterDetailsForma();
             forma.ShowDialog();
         }
+
+        private void btnEF_Click(object sender, EventArgs e)
+        {
+            EFProjekat.EFMasterDetailsForma forma =
+            new EFProjekat.EFMasterDetailsForma();
+                forma.ShowDialog();
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.btnNovi = new System.Windows.Forms.Button();
             this.btnFilmovi = new System.Windows.Forms.Button();
             this.btnLINQ = new System.Windows.Forms.Button();
+            this.btnEF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZanrovi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.dgvZanrovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvZanrovi.Location = new System.Drawing.Point(55, 159);
-            this.dgvZanrovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvZanrovi.Margin = new System.Windows.Forms.Padding(4);
             this.dgvZanrovi.MultiSelect = false;
             this.dgvZanrovi.Name = "dgvZanrovi";
             this.dgvZanrovi.ReadOnly = true;
@@ -55,7 +56,7 @@
             // btnIzmeni
             // 
             this.btnIzmeni.Location = new System.Drawing.Point(181, 417);
-            this.btnIzmeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIzmeni.Margin = new System.Windows.Forms.Padding(4);
             this.btnIzmeni.Name = "btnIzmeni";
             this.btnIzmeni.Size = new System.Drawing.Size(100, 38);
             this.btnIzmeni.TabIndex = 2;
@@ -66,7 +67,7 @@
             // btnObrisi
             // 
             this.btnObrisi.Location = new System.Drawing.Point(315, 417);
-            this.btnObrisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(4);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(100, 38);
             this.btnObrisi.TabIndex = 3;
@@ -99,7 +100,7 @@
             // btnNovi
             // 
             this.btnNovi.Location = new System.Drawing.Point(43, 417);
-            this.btnNovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovi.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovi.Name = "btnNovi";
             this.btnNovi.Size = new System.Drawing.Size(100, 38);
             this.btnNovi.TabIndex = 1;
@@ -110,7 +111,7 @@
             // btnFilmovi
             // 
             this.btnFilmovi.Location = new System.Drawing.Point(315, 105);
-            this.btnFilmovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFilmovi.Margin = new System.Windows.Forms.Padding(4);
             this.btnFilmovi.Name = "btnFilmovi";
             this.btnFilmovi.Size = new System.Drawing.Size(100, 30);
             this.btnFilmovi.TabIndex = 6;
@@ -120,7 +121,7 @@
             // 
             // btnLINQ
             // 
-            this.btnLINQ.Location = new System.Drawing.Point(181, 498);
+            this.btnLINQ.Location = new System.Drawing.Point(108, 496);
             this.btnLINQ.Margin = new System.Windows.Forms.Padding(4);
             this.btnLINQ.Name = "btnLINQ";
             this.btnLINQ.Size = new System.Drawing.Size(100, 38);
@@ -129,11 +130,23 @@
             this.btnLINQ.UseVisualStyleBackColor = true;
             this.btnLINQ.Click += new System.EventHandler(this.btnLINQ_Click);
             // 
+            // btnEF
+            // 
+            this.btnEF.Location = new System.Drawing.Point(245, 496);
+            this.btnEF.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEF.Name = "btnEF";
+            this.btnEF.Size = new System.Drawing.Size(100, 38);
+            this.btnEF.TabIndex = 8;
+            this.btnEF.Text = "EF Prikaz";
+            this.btnEF.UseVisualStyleBackColor = true;
+            this.btnEF.Click += new System.EventHandler(this.btnEF_Click);
+            // 
             // ZanrForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 559);
+            this.Controls.Add(this.btnEF);
             this.Controls.Add(this.btnLINQ);
             this.Controls.Add(this.btnFilmovi);
             this.Controls.Add(this.label2);
@@ -142,7 +155,7 @@
             this.Controls.Add(this.btnIzmeni);
             this.Controls.Add(this.btnNovi);
             this.Controls.Add(this.dgvZanrovi);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ZanrForma";
             this.Text = "ZanrForma";
             this.Load += new System.EventHandler(this.ZanrForma_Load);
@@ -162,5 +175,6 @@
         private System.Windows.Forms.Button btnNovi;
         private System.Windows.Forms.Button btnFilmovi;
         private System.Windows.Forms.Button btnLINQ;
+        private System.Windows.Forms.Button btnEF;
     }
 }
